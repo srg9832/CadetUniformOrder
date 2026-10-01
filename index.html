@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#17365d" />
+  <meta name="description" content="Simple at-cost uniform ordering for squadron members." />
+  <title>Cadet Uniform Order Center</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css?v=22" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" data-nav="shop" aria-label="Go to starter order">
+      <span><strong id="siteName">Cadet Uniform Order</strong><small>New cadet OCP starter</small></span>
+    </button>
+    <nav>
+      <button data-nav="shop">New Cadet Starter</button>
+      <button data-nav="track">Track Order</button>
+      <button data-nav="admin">Admin</button>
+      <button class="cart-button" data-nav="cart">Cart <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+  <main id="app" class="container"></main>
+
+  <footer>
+    <div><strong id="footerName">Cadet Uniform Order Center</strong></div>
+    <div>Items are provided at cost. Orders are reviewed before final purchase.</div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="config.js?v=21"></script>
+  <script src="app.js?v=22"></script>
+</body>
+</html>
